@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">INFS3634 World Clock Application</string>
+    <string name="sydney_photo">sydney_photo</string>
+    <string name="sydney_time">Sydney_time</string>
+    <string name="sydney">Sydney</string>
+    <string name="honolulu">Honolulu</string>
+    <string name="todo">TODO</string>
+    <string name="seattle">Seattle</string>
+    <string name="seattle_photo">seattle_photo</string>
+    <string name="seattle_time">seattle_time</string>
+    <string name="shanghai">Shanghai</string>
+    <string name="shanghai_time">shanghai_time</string>
+    <string name="shanghai_photo">shanghai_photo</string>
+    <string name="amsterdam_photo">amsterdam_photo</string>
+    <string name="update_time">Update time</string>
+    <string name="amsterdam_time">amsterdam_time</string>
+    <string name="_12_24hr_format">12/24hr Format</string>
+    <string name="update_12hr_format">Update:12hr Format</string>
+    <string name="update_24hr_format">Update:24hr Format</string>
+    <string name="amsterdam">Amsterdam</string>
+
+</resources>
