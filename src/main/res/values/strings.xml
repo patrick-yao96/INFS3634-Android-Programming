@@ -1,22 +1,22 @@
 <resources>
-    <string name="app_name">INFS3634 World Clock Application</string>
-    <string name="sydney_photo">sydney_photo</string>
-    <string name="sydney_time">Sydney_time</string>
-    <string name="sydney">Sydney</string>
-    <string name="honolulu">Honolulu</string>
+    <string name="app_name">Borger Kong</string>
+    <string name="view_order">View Order</string>
+    <string name="name">Name</string>
+    <string name="price">Price($)</string>
+    <string name="description">Description</string>
+    <string name="add_button">+</string>
+    <string name="_0">0</string>
+    <string name="minus_button">-</string>
+    <string name="confirm">Confirm</string>
     <string name="todo">TODO</string>
-    <string name="seattle">Seattle</string>
-    <string name="seattle_photo">seattle_photo</string>
-    <string name="seattle_time">seattle_time</string>
-    <string name="shanghai">Shanghai</string>
-    <string name="shanghai_time">shanghai_time</string>
-    <string name="shanghai_photo">shanghai_photo</string>
-    <string name="amsterdam_photo">amsterdam_photo</string>
-    <string name="update_time">Update time</string>
-    <string name="amsterdam_time">amsterdam_time</string>
-    <string name="_12_24hr_format">12/24hr Format</string>
-    <string name="update_12hr_format">Update:12hr Format</string>
-    <string name="update_24hr_format">Update:24hr Format</string>
-    <string name="amsterdam">Amsterdam</string>
+    <string name="my_order_overview">My Order Overview</string>
+    <string name="order_total">Order Total</string>
+    <string name="total">Total</string>
 
+    <string name="price_1">Price</string>
+    <string name="number">Number</string>
+    <string name="menu">Menu</string>
+    <string name="textview">TextView</string>
+    <string name="borger_kong_menu">Borger Kong Menu</string>
+    <string name="space" />
 </resources>

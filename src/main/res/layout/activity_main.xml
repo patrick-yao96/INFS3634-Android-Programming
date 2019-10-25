@@ -6,264 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/borger_kong_menu"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/viewOrder_button"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+    </androidx.recyclerview.widget.RecyclerView>
 
-                <TextView
-                    android:id="@+id/sydney_name"
-                    android:layout_width="115dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/sydney"
-                    android:textSize="23sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+    <Button
+        android:id="@+id/viewOrder_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
 
-
-                    />
-
-                <TextView
-                    android:id="@+id/sydney_time"
-                    android:layout_width="154dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/sydney_time"
-                    android:textSize="20sp"
-                    app:layout_constraintStart_toEndOf="@id/sydney_name"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/sydney_image"
-                    android:layout_width="100sp"
-                    android:layout_height="120sp"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/sydney_photo"
-                    android:gravity="center"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintStart_toEndOf="@id/sydney_time"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/sydney_photo" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:id="@+id/honolulu_name"
-                    android:layout_width="115dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/honolulu"
-                    android:textSize="23sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-
-
-                    />
-
-                <TextView
-                    android:id="@+id/honolulu_time"
-                    android:layout_width="154dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/honolulu"
-                    android:textSize="20sp"
-                    app:layout_constraintStart_toEndOf="@id/sydney_name"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/honolulu_image"
-                    android:layout_width="100sp"
-                    android:layout_height="120sp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintStart_toEndOf="@id/sydney_time"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/honoluluimage"
-                    android:contentDescription="@string/todo" />
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:id="@+id/seattle_name"
-                    android:layout_width="115dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/seattle"
-                    android:textSize="23sp"
-
-                    />
-
-                <TextView
-                    android:id="@+id/seattle_time"
-                    android:layout_width="154dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/seattle_time"
-                    android:textSize="20sp"
-                     />
-
-                <ImageView
-                    android:id="@+id/seattle_image"
-                    android:layout_width="100sp"
-                    android:layout_height="120sp"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/seattle_photo"
-                    android:gravity="center"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/seattleimage" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:id="@+id/shanghai_name"
-                    android:layout_width="115dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/shanghai"
-                    android:textSize="23sp"
-
-                    />
-
-                <TextView
-                    android:id="@+id/shanghai_time"
-                    android:layout_width="154dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/shanghai_time"
-                    android:textSize="20sp"
-                    />
-
-                <ImageView
-                    android:id="@+id/shanghai_image"
-                    android:layout_width="100sp"
-                    android:layout_height="120sp"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/shanghai_photo"
-                    android:gravity="center"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/shanghaiimage" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:id="@+id/amsterdam_name"
-                    android:layout_width="115dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/amsterdam"
-                    android:textSize="23sp"
-
-                    />
-
-                <TextView
-                    android:id="@+id/amsterdam_time"
-                    android:layout_width="154dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/amsterdam_time"
-                    android:textSize="20sp"
-                    />
-
-                <ImageView
-                    android:id="@+id/amsterdam_image"
-                    android:layout_width="100sp"
-                    android:layout_height="120sp"
-                    android:layout_weight="1"
-                    android:contentDescription="@string/amsterdam_photo"
-                    android:gravity="center"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/amsterdamimage" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                
-                >
-
-                <Button
-                    android:id="@+id/update12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/update_12hr_format"
-
-                    />
-
-                <Button
-                    android:id="@+id/update24"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/update_24hr_format"
-
-                    />
-            </LinearLayout>
-
-
-        </LinearLayout>
-    </ScrollView>
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
